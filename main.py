@@ -48,4 +48,4 @@ for Filename in os.listdir("./cmds"):
 		bot.load_extension(F'cmds.{Filename[:-3]}')
 
 
-bot.run("OTk3ODAzNjA0NjQxNTk5NDk4.Gzz2-F.BFw6OF6GcNW_CkrA5GvCkmVswTe3GG6XdSps9I")
+bot.run("")
