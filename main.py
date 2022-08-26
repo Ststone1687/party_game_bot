@@ -13,6 +13,9 @@ import asyncio
 import math
 import datetime
 
+with open('token.txt') as f:
+  token = f.readlines()[0]
+
 @bot.event
 async def on_ready():
   print('Logged in as')
@@ -48,4 +51,4 @@ for Filename in os.listdir("./cmds"):
 		bot.load_extension(F'cmds.{Filename[:-3]}')
 
 
-bot.run("")
+bot.run(token)
